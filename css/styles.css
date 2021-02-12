@@ -1,20 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');
 
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;    
+.todo_container {
+border: 1px solid black;
+display: flex;
+height: 90vh;
+flex-direction: column;
+/* justify-content: center; */
+/* align-items: center; */
+margin: 20px;
 }
 
-body {
-font-family: 'Hammersmith One', sans-serif;
+p {
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.title_header {
+background-color: #0a043c;
+text-align: center;  
+}
+.main_title {
+text-decoration: underline;
+color: #fff;
+font-size: 4em;
+text-transform: uppercase;  
+font-family: 'Open Sans', sans-serif;  
+}
+
+.sub_title {
+color: #fff;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.todo_form {
+width: 50%;
+display: flex;
+justify-content: space-evenly;
+}
+
+
+input[type="text"] {
 text-align: center;
+color: white;
+padding: 12px 20px;
+width: 50%;
 }
 
-section {
-background-color: burlywood;
-border: 5px solid black;  
+.input_field {
+border: 2px solid  #c70039;
+border-radius: 25px 25px 25px 25px;
+background:  #c70039;
+color: white;
+outline: none;
 }
 
+.button_task {
+border: 2px solid  #c70039;
+border-radius: 25px 25px 25px 25px;
+background:  #c70039;
+color: white;
+outline: none;
+font-family: 'Ubuntu', sans-serif;
+}
 
   
