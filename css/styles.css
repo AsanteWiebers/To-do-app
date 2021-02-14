@@ -64,4 +64,54 @@ outline: none;
 font-family: 'Ubuntu', sans-serif;
 }
 
-  
+.button_task:hover {
+background-color: #0a043c;
+transition-timing-function: ease-in;
+transition: 0.5s;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 400px) {
+    
+
+    .todo_form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    }
+
+    p {
+    width: 100%;
+    margin: 20px 10px;
+    text-align: center;
+    }
+
+    .input_field {
+    padding: 1.5em;
+    margin-bottom: 1em;
+    }
+
+    .button_task {
+    margin-top: 1em;
+    padding: 2em;
+    }
+
+}
+
+@media(max-width: 768px) {
+    
+    .todo_form {
+    display: flex;
+    width: 100%;
+    }
+
+
+    .button_task {
+    justify-content: space-evenly;
+    }
+
+
+}
