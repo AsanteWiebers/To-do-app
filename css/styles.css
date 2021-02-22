@@ -42,6 +42,7 @@ justify-content: space-evenly;
 
 input[type="text"] {
 text-align: center;
+
 color: white;
 padding: 12px 20px;
 width: 50%;
@@ -50,6 +51,7 @@ width: 50%;
 .input_field {
 border: 2px solid  #c70039;
 border-radius: 25px 25px 25px 25px;
+border: 2px solid black;
 background:  #c70039;
 color: white;
 outline: none;
@@ -58,6 +60,7 @@ outline: none;
 .button_task {
 border: 2px solid  #c70039;
 border-radius: 25px 25px 25px 25px;
+border: 2px solid black;
 background:  #c70039;
 color: white;
 outline: none;
@@ -73,8 +76,10 @@ transition: 0.5s;
 
 /* Media Queries */
 
-@media(max-width: 400px) {
-    
+@media(max-width: 480px) {
+    .main_title {
+    font-size: 2em;
+    }
 
     .todo_form {
     display: flex;
@@ -113,5 +118,18 @@ transition: 0.5s;
     justify-content: space-evenly;
     }
 
+
+}
+
+
+@media(max-width: 1024px) {
+.todo_form {
+display: flex;
+width: 100%;
+}
+
+.button_task {
+justify-content: space-evenly;
+}
 
 }
